@@ -17,9 +17,9 @@ dependencies {
     implementation(SqlDelight.runtime)
 }
 
-//sqldelight {
-//    database("MovieDatabase") {
-//        packageName = "uz.devazimjon.sample.mover.movie_datasource.cache"
-//        sourceFolders = listOf("sqldelight")
-//    }
-//}
+sqldelight {
+    database("MovieDatabase") {
+        packageName = "uz.devazimjon.sample.mover.movie.datasource.cache"
+        sourceFolders = listOf("sqldelight")
+    }
+}

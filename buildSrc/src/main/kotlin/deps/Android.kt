@@ -8,5 +8,5 @@ object Android {
     const val versionCode = 1
     const val versionName = "1.0.1"
 
-    const val androidBuildTools = "com.android.tools.build:gradle:$androidBuildToolsVersion"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:$androidBuildToolsVersion"
 }

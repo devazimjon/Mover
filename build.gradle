@@ -5,8 +5,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath(Android.androidBuildTools)
-        classpath(KotlinPlugins.kotlinGradlePlugin)
+        classpath(Android.androidGradlePlugin)
+        classpath(Kotlin.kotlinGradlePlugin)
         classpath(Hilt.hiltAndroid)
         classpath(SqlDelight.sqlDelightGradlePlugin)
     }

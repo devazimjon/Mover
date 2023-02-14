@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Mover"
 include ':app'
+
+include ':core'

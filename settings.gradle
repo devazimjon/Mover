@@ -16,3 +16,8 @@ rootProject.name = "Mover"
 include ':app'
 
 include ':core'
+
+include ':movie:movie-datasource'
+include ':movie:movie-domain'
+include ':movie:ui-detail'
+include ':movie:ui-list'

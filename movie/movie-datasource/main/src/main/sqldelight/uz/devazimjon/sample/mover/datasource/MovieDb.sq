@@ -1,0 +1,30 @@
+CREATE TABLE  movie_entity(
+    id INTEGER NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    img TEXT NOT NULL
+);
+
+selectAll:
+SELECT *
+FROM movie_entity;
+
+insert:
+INSERT OR REPLACE
+INTO movie_entity (
+    id,
+    name,
+    img
+) VALUES (?, ?, ?);
+
+
+getByName:
+SELECT * FROM movie_entity
+WHERE name LIKE ('%' || :query || '%');
+
+getMovie:
+SELECT * FROM movie_entity
+WHERE id = :id;
+
+remove:
+DELETE FROM movie_entity
+WHERE id = :id;

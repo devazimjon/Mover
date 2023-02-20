@@ -1,6 +1,7 @@
 plugins {
     id("java-library")
     id("org.jetbrains.kotlin.jvm")
+    id("kotlinx-serialization")
 }
 
 java {
@@ -9,14 +10,9 @@ java {
 }
 
 dependencies {
-    implementation(project(Modules.core))
     implementation(project(Modules.Movie.datasource))
     implementation(project(Modules.Movie.domain))
 
-    implementation(KotlinX.coroutinesCore)
-
-//    testImplementation(project(Modules.Movie.datasourceTest))
-    testImplementation(Junit.junit4)
-    testImplementation(Ktor.ktorClientMock)
-    testImplementation(Ktor.clientSerialization)
+    implementation(Ktor.ktorClientMock)
+    implementation(Ktor.clientSerialization)
 }

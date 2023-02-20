@@ -34,7 +34,5 @@ class GetMovieFromCache(
             }
         )
         emit(DataState.Loading(progressBarState = ProgressBarState.Idle))
-
-        emit(DataState.Loading(progressBarState = ProgressBarState.Idle))
     }
 }

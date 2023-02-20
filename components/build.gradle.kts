@@ -2,7 +2,6 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("kotlinx-serialization")
 }
 
 
@@ -12,7 +11,6 @@ android {
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -24,12 +22,6 @@ android {
 
 dependencies {
     implementation(project(Modules.core))
-
-    implementation(project(Modules.components))
-    implementation(project(Modules.Movie.interactors))
-    implementation(project(Modules.Movie.domain))
-
-    implementation(Coil.coil)
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.appCompat)
@@ -44,6 +36,5 @@ dependencies {
     implementation(Google.material)
 
     implementation(Hilt.android)
-    implementation("androidx.compose.ui:ui:1.1.1")
     kapt(Hilt.compiler)
 }

@@ -17,6 +17,8 @@ include ':app'
 
 include ':core'
 
+include ':components'
+
 include ':movie:movie-datasource:main'
 include ':movie:movie-datasource:test'
 include ':movie:movie-interactors'

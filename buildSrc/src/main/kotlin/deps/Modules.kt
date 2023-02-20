@@ -8,6 +8,7 @@ object Modules {
         val datasource = "$groupName:movie-datasource:main"
         val datasourceTest = "$groupName:movie-datasource:test"
         val domain = "$groupName:movie-domain"
+        val interactors = "$groupName:movie-interactors"
         val uiDetail = "$groupName:ui-detail"
         val uiList = "$groupName:ui-list"
     }

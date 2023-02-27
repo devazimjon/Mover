@@ -6,9 +6,13 @@ sealed interface MovieListEvents {
 
     object GetMovies : MovieListEvents
 
-    class FilterMovies(val name: String) : MovieListEvents
+    object FilterMovies : MovieListEvents
+
+    class ChangeMovieName(val name: String) : MovieListEvents
 
     object OnRemoveHeadFromQueue : MovieListEvents
 
     class UpdateFilterDialogState(val state: UIComponentState) : MovieListEvents
+
+    class UpdateMovieName(val name: String) : MovieListEvents
 }

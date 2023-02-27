@@ -1,5 +1,6 @@
 package uz.devazimjon.sample.mover.movie.interactors
 
+import com.squareup.sqldelight.db.SqlDriver
 import uz.devazimjon.sample.mover.movie.datasource.cache.MovieCache
 import uz.devazimjon.sample.mover.movie.datasource.network.MovieService
 
@@ -12,6 +13,7 @@ interface MovieInteractors {
     val getMovieFromCache: GetMovieFromCache
 
     companion object Factory {
+
         fun create(): MovieInteractors {
             val movieCache = MovieCache()
             return object : MovieInteractors {

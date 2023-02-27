@@ -1,9 +1,12 @@
+import Compose.composeVersion
+
 private const val activityComposeVersion = "1.3.0-rc01"
-private const val composeVersion = "1.0.0"
 private const val hiltNavigationComposeVersion = "1.0.0-alpha03"
 private const val navigationVersion = "2.4.0-alpha04"
 
 object Compose {
+    const val composeVersion = "1.0.0"
+
     const val activity = "androidx.activity:activity-compose:$activityComposeVersion"
 
     const val ui = "androidx.compose.ui:ui:$composeVersion"

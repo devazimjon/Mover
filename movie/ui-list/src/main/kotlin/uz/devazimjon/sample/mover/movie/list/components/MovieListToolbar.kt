@@ -32,7 +32,6 @@ import uz.devazimjon.sample.mover.movie.list.ui.MovieListEvents
 @Composable
 fun MovieListToolbar(
     movieName: String,
-    events: (MovieListEvents) -> Unit,
     onMovieNameChanged: (String) -> Unit,
     onSearch: () -> Unit,
     onOpenFilter: () -> Unit

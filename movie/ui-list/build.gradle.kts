@@ -44,6 +44,5 @@ dependencies {
     implementation(Google.material)
 
     implementation(Hilt.android)
-    implementation("androidx.compose.ui:ui:1.1.1")
     kapt(Hilt.compiler)
 }

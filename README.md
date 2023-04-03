@@ -13,3 +13,5 @@ https://api.opendota.com/api/heroStats
 # Credits
 1. [mitchtabian](https://github.com/mitchtabian)
     - Thanks for the great [sample](https://github.com/mitchtabian/Dota-Info).
+
+Check push
